@@ -45,9 +45,9 @@ document.getElementById("addExpense").addEventListener("click", function() {
 function updateSummary() {
   balance = totalBudget - totalExpenses;
 
-  document.getElementById("totalBudget").querySelector("h3").innerText = `$${totalBudget}`;
-  document.getElementById("totalExpenses").querySelector("h3").innerText = `$${totalExpenses}`;
-  document.getElementById("balance").querySelector("h3").innerText = `$${balance}`;
+  document.getElementById("totalBudget").querySelector("h3").innerText = `$₹{totalBudget}`;
+  document.getElementById("totalExpenses").querySelector("h3").innerText = `$₹{totalExpenses}`;
+  document.getElementById("balance").querySelector("h3").innerText = `$₹{balance}`;
 }
 
 // Function to render the list of budget details
